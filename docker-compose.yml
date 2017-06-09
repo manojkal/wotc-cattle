@@ -1,0 +1,11 @@
+version: '2'
+services:
+  vnc:
+    image: consol/centos-xfce-vnc
+    stdin_open: true
+    tty: true
+    ports:
+    - 5901:6901/tcp
+    user: '0'
+    labels:
+      io.rancher.container.pull_image: always
